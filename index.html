@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do list</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="popup">
+        <input
+          type="text"
+          name="input-text1"
+          placeholder="Введіть завдання і натисніть 'Enter'"
+        />
+      </div>
+    </header>
+    <main>
+      <!-- <div class="buttons_div">
+        <button class="actual">Актуальні</button>
+        <button>Виконані</button>
+        <button>Видалені</button>
+      </div> -->
+      <div >
+        <ul class="procesing"> 
+          <li>
+             <div>
+            <input type="checkbox" name="input-text2" />
+          </div>
+          <p >Створити список завдань які потрібно виконати,тому їх вкрай важливо записати в список завдань,
+            який створиться з метою додавання і показу завдань,необхідних для виконаня </p>
+            <button class="correct">Редагувати</button>
+            <button class=" deleting">Видалити</button>
+        </li>
+        </ul>
+      </div>
+      <ul id="completed">
+        <li></li>
+      </ul>
+      <ul id="deleted_list">
+        <li></li>
+      </ul>
+    </main>
+    <footer>
+      <button id="add_task"><img src="./image/icon-plus.png" alt="" /></button>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

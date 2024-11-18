@@ -1,0 +1,103 @@
+body {
+  background-image: url(./image/background.webp);
+  background-size: cover;
+}
+
+li {
+  list-style: none;
+  background-color: rgb(201, 201, 201);
+  margin: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+}
+
+header input {
+  height: 45px;
+  width: 400px;
+  border-radius: 15px;
+}
+header .popup {
+  display: none;
+  padding: 15% 35%;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+header .popup button {
+  height: 35px;
+}
+
+header .active {
+  display: block;
+}
+
+main {
+  height: 400px;
+  margin-top: 50px;
+  background-color: white;
+  width: 45%;
+  margin-left: 30%;
+  border-radius: 25px;
+  overflow-y: auto;
+}
+main::-webkit-scrollbar {
+  width: 15px;
+}
+
+main::-webkit-scrollbar-track {
+  background: #f7f7f8;
+}
+
+main::-webkit-scrollbar-thumb {
+  background-color: #1e5516;
+  border-radius: 10px;
+  border: 3px double #f8f7f7;
+}
+main .correct , main .deleting{
+  height: 35px;
+}
+main .correct:hover{
+  background-color: rgb(14, 194, 14);
+}
+main .deleting:hover{
+  background-color: red;
+}
+.buttons_div {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.buttons_div .actual{
+  background-color: red;
+}
+
+.buttons_div button {
+  height: 35px;
+  border-radius: 15px;
+  background-color: yellowgreen;
+}
+
+main ul li p{
+  width: 50%;
+}
+
+footer {
+  display: flex;
+  justify-content: end;
+  width: 36%;
+}
+footer button {
+  background-color: transparent;
+  border: none;
+}
+footer img {
+  width: 70px;
+}
